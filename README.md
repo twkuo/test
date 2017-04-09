@@ -7,7 +7,7 @@ intercepts a quorum for the block. Such a commitment might be premature and lead
 after a node intercepts a quorum. The resulting protocol is then **PBFT-like**, and this newly added phase serves the same purpose 
 as the Commit phase in PBFT. 
 
-Note that HydraChain is inspired by [Tendermint](https://github.com/tendermint/tendermint), a consensus protocol similar to PBFT. 
+Note that HydraChain is inspired by [Tendermint](https://github.com/tendermint/tendermint), a PBFT-like consensus protocol. 
 Indeed, one can deem HydraChain as a simplification of Tendermint. Hence, the demand to add one more phase to HydryChain inevitably 
 steers our focus to Tendermint. We hence decide to adopt Tendermint as our consensus protocol as it embodies the additional phase 
 that we need to prevent premature commitment.
